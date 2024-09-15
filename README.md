@@ -3,7 +3,7 @@
 ## Bootstrap
 
 ```shell
-$ make bs
+make bs
 ```
 
 ## Development
