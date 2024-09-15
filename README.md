@@ -1,6 +1,10 @@
-# Welcome to Remix!
+# Plantica
 
-- 📖 [Remix docs](https://remix.run/docs)
+## Bootstrap
+
+```shell
+$ make bs
+```
 
 ## Development
 
