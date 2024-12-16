@@ -1,40 +1,48 @@
 # Plantica
 
-## Bootstrap
+Plantica (プランティカ) は、家計簿 Web アプリケーションです。
 
-```shell
+## 動作環境
+
+Plantica を動作させるための基本環境は以下の通りです。
+
+- Bun: 1.0.28
+
+## セットアップ方法
+
+### 初回セットアップ
+
+プロジェクトの初期セットアップを行うには、以下のコマンドを実行してください。
+
+```bash
 make bs
 ```
 
-## Development
+### 開発サーバーの起動
 
-Run the dev server:
+開発を始める際は、以下のコマンドでローカルサーバーを起動できます。
 
-```shell
+```bash
 bun run dev
 ```
 
-## Deployment
+### 技術スタック
 
-First, build your app for production:
+Plantica では、以下の技術スタックを採用しています。
 
-```shell
-bun run build
-```
+#### フロントエンド
 
-Then run the app in production mode:
+- フレームワーク: Remix (React)
+  - モード: SPA モードを使用
+- スタイリング: Tailwind CSS
 
-```shell
-bun start
-```
+#### 開発ツール
 
-Now you'll need to pick a host to deploy it to.
+- バージョン管理: mise によるバージョン管理
+- リンター: ESLint
+- 依存関係管理: Renovate で自動更新
+- CI/CD: GitHub Actions による継続的インテグレーション
 
-### DIY
+#### ホスティング
 
-If you're familiar with deploying Node applications, the built-in Remix app server is production-ready.
-
-Make sure to deploy the output of `bun run build`
-
-- `build/server`
-- `build/client`
+- ホスティングサービス: Vercel
