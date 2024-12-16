@@ -4,4 +4,4 @@ help:
 
 .PHONY: bs
 bs: # Bootstrap to start development.
-	@../scripts/bootstrap.sh
+	@./scripts/bootstrap.sh
