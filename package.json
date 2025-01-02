@@ -4,8 +4,8 @@
   "type": "module",
   "sideEffects": false,
   "scripts": {
-    "build": "remix vite:build",
     "dev": "remix vite:dev",
+    "build": "remix vite:build",
     "start": "remix-serve ./build/server/index.js",
     "check": "biome check",
     "check:fix": "biome check --write",
