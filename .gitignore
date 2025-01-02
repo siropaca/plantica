@@ -41,4 +41,4 @@ env/.env.production
 # Others
 dist/
 build/
-app/uno.css
+app/styles/uno.css
