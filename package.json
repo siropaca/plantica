@@ -5,7 +5,7 @@
   "sideEffects": false,
   "scripts": {
     "dev": "concurrently \"unocss \"app/**/*.tsx\" --out-file=\"app/uno.css\" --watch\" \"remix vite:dev\"",
-    "build": "remix vite:build",
+    "build": "bun run css && remix vite:build",
     "start": "remix-serve ./build/server/index.js",
     "css": "unocss app/**/*.tsx --out-file=app/uno.css",
     "check": "biome check",
