@@ -1,0 +1,336 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  :root {
+    /**
+     * Primitive Color
+     */
+    --black: #000000;
+    --white: #ffffff;
+    /** Gray */
+    --gray-1: #fcfcfd;
+    --gray-2: #f9f9fb;
+    --gray-3: #eff0f3;
+    --gray-4: #e7e8ec;
+    --gray-5: #e0e1e6;
+    --gray-6: #d8d9e0;
+    --gray-7: #cdced7;
+    --gray-8: #b9bbc6;
+    --gray-9: #8b8d98;
+    --gray-10: #80828d;
+    --gray-11: #62636c;
+    --gray-12: #1e1f24;
+    --gray-a1: #00005503;
+    --gray-a2: #00005505;
+    --gray-a3: #0010400f;
+    --gray-a4: #000b3617;
+    --gray-a5: #0009321f;
+    --gray-a6: #00073526;
+    --gray-a7: #00063332;
+    --gray-a8: #00083045;
+    --gray-a9: #00051d73;
+    --gray-a10: #00051b7e;
+    --gray-a11: #0002119d;
+    --gray-a12: #000107e1;
+    /** Grayish Blue */
+    --grayish-blue-1: #fbfdff;
+    --grayish-blue-2: #f3faff;
+    --grayish-blue-3: #e6f4ff;
+    --grayish-blue-4: #d4eeff;
+    --grayish-blue-5: #bfe5ff;
+    --grayish-blue-6: #a7d9ff;
+    --grayish-blue-7: #88c8fc;
+    --grayish-blue-8: #54b2f7;
+    --grayish-blue-9: #2397e1;
+    --grayish-blue-10: #068ad4;
+    --grayish-blue-11: #007ac2;
+    --grayish-blue-12: #003662;
+    /** Red */
+    --red-1: #fffcfc;
+    --red-2: #fff7f7;
+    --red-3: #feebec;
+    --red-4: #ffdbdc;
+    --red-5: #ffcdce;
+    --red-6: #fdbdbe;
+    --red-7: #f4a9aa;
+    --red-8: #eb8e90;
+    --red-9: #e5484d;
+    --red-10: #dc3e42;
+    --red-11: #ce2c31;
+    --red-12: #641723;
+    /** Teal */
+    --teal-1: #fafefd;
+    --teal-2: #f3fbf9;
+    --teal-3: #e0f8f3;
+    --teal-4: #ccf3ea;
+    --teal-5: #b8eae0;
+    --teal-6: #a1ded2;
+    --teal-7: #83cdc1;
+    --teal-8: #53b9ab;
+    --teal-9: #12a594;
+    --teal-10: #0d9b8a;
+    --teal-11: #008573;
+    --teal-12: #0d3d38;
+
+    /**
+     * Theme Color
+     */
+    /** Primary */
+    --primary-1: var(--grayish-blue-1);
+    --primary-2: var(--grayish-blue-2);
+    --primary-3: var(--grayish-blue-3);
+    --primary-4: var(--grayish-blue-4);
+    --primary-5: var(--grayish-blue-5);
+    --primary-6: var(--grayish-blue-6);
+    --primary-7: var(--grayish-blue-7);
+    --primary-8: var(--grayish-blue-8);
+    --primary-9: var(--grayish-blue-9);
+    --primary-10: var(--grayish-blue-10);
+    --primary-11: var(--grayish-blue-11);
+    --primary-12: var(--grayish-blue-12);
+    /** Neutral */
+    --neutral-1: var(--gray-1);
+    --neutral-2: var(--gray-2);
+    --neutral-3: var(--gray-3);
+    --neutral-4: var(--gray-4);
+    --neutral-5: var(--gray-5);
+    --neutral-6: var(--gray-6);
+    --neutral-7: var(--gray-7);
+    --neutral-8: var(--gray-8);
+    --neutral-9: var(--gray-9);
+    --neutral-10: var(--gray-10);
+    --neutral-11: var(--gray-11);
+    --neutral-12: var(--gray-12);
+    --neutral-a1: var(--gray-a1);
+    --neutral-a2: var(--gray-a2);
+    --neutral-a3: var(--gray-a3);
+    --neutral-a4: var(--gray-a4);
+    --neutral-a5: var(--gray-a5);
+    --neutral-a6: var(--gray-a6);
+    --neutral-a7: var(--gray-a7);
+    --neutral-a8: var(--gray-a8);
+    --neutral-a9: var(--gray-a9);
+    --neutral-a10: var(--gray-a10);
+    --neutral-a11: var(--gray-a11);
+    --neutral-a12: var(--gray-a12);
+    /** Danger */
+    --danger-1: var(--red-1);
+    --danger-2: var(--red-2);
+    --danger-3: var(--red-3);
+    --danger-4: var(--red-4);
+    --danger-5: var(--red-5);
+    --danger-6: var(--red-6);
+    --danger-7: var(--red-7);
+    --danger-8: var(--red-8);
+    --danger-9: var(--red-9);
+    --danger-10: var(--red-10);
+    --danger-11: var(--red-11);
+    --danger-12: var(--red-12);
+
+    /**
+     * Semantic Color
+     */
+    /** Text */
+    --text: var(--neutral-a12);
+    --text-subtle: var(--neutral-a11);
+    --text-subtler: var(--neutral-a8);
+    --text-disable: var(--neutral-a8);
+    --text-primary: var(--primary-11);
+    --text-primary-action: var(--primary-1);
+    --text-secondary: var(--primary-11);
+    --text-danger: var(--danger-11);
+    --text-success: var(--teal-11);
+    /** Background */
+    --background: var(--neutral-2);
+    /** Surface */
+    --surface: var(--white);
+    --surface-subtle: var(--neutral-2);
+    --surface-subtler: var(--neutral-5);
+    --surface-disable: var(--neutral-4);
+    /** Surface Default Action */
+    --surface-default-action-enabled: var(--neutral-3);
+    --surface-default-action-hovered: var(--neutral-4);
+    --surface-default-action-pressed: var(--neutral-5);
+    --surface-default-action-disabled: var(--neutral-4);
+    /** Surface Primary Action */
+    --surface-primary-action-enabled: var(--primary-9);
+    --surface-primary-action-hovered: var(--primary-10);
+    --surface-primary-action-pressed: var(--primary-11);
+    --surface-primary-action-disabled: var(--neutral-4);
+    /** Surface Secondary Action */
+    --surface-secondary-action-enabled: var(--primary-3);
+    --surface-secondary-action-hovered: var(--primary-4);
+    --surface-secondary-action-pressed: var(--primary-5);
+    --surface-secondary-action-disabled: var(--neutral-4);
+    /** Surface Danger Action */
+    --surface-danger-action-enabled: var(--danger-9);
+    --surface-danger-action-hovered: var(--danger-10);
+    --surface-danger-action-pressed: var(--danger-11);
+    --surface-danger-action-disabled: var(--neutral-4);
+    /** Border */
+    --border: var(--neutral-7);
+    --border-subtle: var(--neutral-6);
+    --border-bold: var(--neutral-11);
+    --border-danger: var(--danger-11);
+    /** Border Primary Action */
+    --border-primary-action-focused: var(--primary-9);
+    /** Border Secondary Action */
+    --border-secondary-action-enabled: var(--primary-9);
+    --border-secondary-action-focused: var(--primary-7);
+    /** Vector */
+    --vector: var(--neutral-12);
+    --vector-subtle: var(--neutral-11);
+    --vector-subtler: var(--neutral-10);
+    --vector-disable: var(--neutral-6);
+    --vector-primary: var(--primary-11);
+    --vector-primary-action: var(--primary-1);
+    --vector-secondary-action: var(--primary-11);
+    --vector-danger: var(--danger-11);
+    --vector-success: var(--teal-11);
+
+    /**
+     * Dimension
+     */
+    /** Icon */
+    --icon-lg: 40px;
+    --icon-md: 32px;
+    --icon-sm: 24px;
+
+    /**
+     * Radius
+     */
+    --radius-infinity: 999px;
+    --radius-xl: 16px;
+    --radius-lg: 12px;
+    --radius-md: 8px;
+    --radius-sm: 4px;
+    --radius-xs: 2px;
+    --radius-none: 0px;
+
+    /**
+     * Spacing
+     */
+    --spacing-xxl: 64px;
+    --spacing-xl: 48px;
+    --spacing-lg: 32px;
+    --spacing-md: 24px;
+    --spacing-sm: 16px;
+    --spacing-xs: 8px;
+    --spacing-xxs: 4px;
+    --spacing-xxxs: 2px;
+    --spacing-none: 0px;
+
+    /**
+     * Typography
+     */
+    /** Font Weight */
+    --font-weight-normal: normal;
+    --font-weight-medium: medium;
+    --font-weight-bold: bold;
+    /** Font Size */
+    --font-size-90: 48px;
+    --font-size-80: 40px;
+    --font-size-70: 34px;
+    --font-size-60: 28px;
+    --font-size-50: 24px;
+    --font-size-40: 20px;
+    --font-size-30: 16px;
+    --font-size-20: 14px;
+    --font-size-10: 12px;
+    /** Line Height */
+    --line-height-90: 57.6;
+    --line-height-80: 48;
+    --line-height-70: 40.8;
+    --line-height-60: 33.6;
+    --line-height-50: 28.8;
+    --line-height-40: 24;
+    --line-height-30: 19.2;
+    --line-height-20: 16.8;
+    --line-height-10: 14.4;
+    --line-height-trim: 1;
+    /** Letter Spacing */
+    --letter-spacing-90: 0.72;
+    --letter-spacing-80: 0.8;
+    --letter-spacing-70: 0.68;
+    --letter-spacing-60: 0.56;
+    --letter-spacing-50: 0.64;
+    --letter-spacing-40: 0.5;
+    --letter-spacing-30: 0.4;
+    --letter-spacing-20: 0.35;
+    --letter-spacing-10: 0.3;
+  }
+
+  .dark {
+    /**
+     * Primitive Color
+     */
+    --black: #ffffff;
+    --white: #000000;
+    /** Gray */
+    --gray-1: #111113;
+    --gray-2: #19191b;
+    --gray-3: #222325;
+    --gray-4: #292a2e;
+    --gray-5: #303136;
+    --gray-6: #393a40;
+    --gray-7: #46484f;
+    --gray-8: #5f606a;
+    --gray-9: #6c6e79;
+    --gray-10: #797b86;
+    --gray-11: #b2b3bd;
+    --gray-12: #eeeef0;
+    --gray-a1: #1111bb03;
+    --gray-a2: #cbcbf909;
+    --gray-a3: #d6e2f916;
+    --gray-a4: #d1d9f920;
+    --gray-a5: #d7ddfd28;
+    --gray-a6: #d9defc33;
+    --gray-a7: #dae2fd42;
+    --gray-a8: #e0e3fd60;
+    --gray-a9: #e0e4fd70;
+    --gray-a10: #e3e7fd7d;
+    --gray-a11: #eff0feb9;
+    --gray-a12: #fdfdffef;
+    /** Grayish Blue */
+    --grayish-blue-1: #08121a;
+    --grayish-blue-2: #0e1a25;
+    --grayish-blue-3: #0b293e;
+    --grayish-blue-4: #083654;
+    --grayish-blue-5: #104366;
+    --grayish-blue-6: #1b5279;
+    --grayish-blue-7: #266491;
+    --grayish-blue-8: #2e79ae;
+    --grayish-blue-9: #7fbff2;
+    --grayish-blue-10: #74b4e7;
+    --grayish-blue-11: #81c1f4;
+    --grayish-blue-12: #cdebff;
+    /** Red */
+    --red-1: #191111;
+    --red-2: #201314;
+    --red-3: #3b1219;
+    --red-4: #500f1c;
+    --red-5: #611623;
+    --red-6: #72232d;
+    --red-7: #8c333a;
+    --red-8: #b54548;
+    --red-9: #e5484d;
+    --red-10: #ec5d5e;
+    --red-11: #ff9592;
+    --red-12: #ffd1d9;
+    /** Teal */
+    --teal-1: #0d1514;
+    --teal-2: #111c1b;
+    --teal-3: #0d2d2a;
+    --teal-4: #023b37;
+    --teal-5: #084843;
+    --teal-6: #145750;
+    --teal-7: #1c6961;
+    --teal-8: #207e73;
+    --teal-9: #12a594;
+    --teal-10: #0eb39e;
+    --teal-11: #0bd8b6;
+    --teal-12: #adf0dd;
+  }
+}
