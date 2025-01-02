@@ -2,6 +2,7 @@ import type { LinksFunction, MetaFunction } from '@remix-run/node'
 import { Links, Meta, Outlet, Scripts, ScrollRestoration } from '@remix-run/react'
 import reset from '@unocss/reset/tailwind.css?url'
 import unocss from '~/styles/uno.css?url'
+import '~/styles/index.css'
 
 export const meta: MetaFunction = () => [{ title: 'Plantica' }]
 
