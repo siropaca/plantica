@@ -1,7 +1,43 @@
+# Miscellaneous
+.DS_Store
+
+# IntelliJ related
+*.iml
+*.ipr
+*.iws
+.idea/*
+# Keep the project icon.
+!/.idea/icon.png
+# Keep the run configurations.
+!/.idea/runConfigurations/make_bootstrap.xml
+!/.idea/runConfigurations/make_clean.xml
+
+# Editor User Setting Files
+.vscode/*
+!.vscode/settings.json
+!.vscode/tasks.json
+!.vscode/launch.json
+!.vscode/extensions.json
+!.vscode/*.code-snippets
+*.code-workspace
+!default.code-workspace
+.classpath
+.project
+
+# dependencies
 node_modules
 
-/.cache
-/build
-.env
+# Coverage
+coverage/
 
-.idea
+# Firebase
+.firebase
+
+# Environment
+env/.env.development
+env/.env.staging
+env/.env.production
+
+# Others
+dist/
+build/
