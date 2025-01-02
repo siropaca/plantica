@@ -1,5 +1,7 @@
 {
   "name": "plantica",
+  "description": "",
+  "license": "",
   "private": true,
   "type": "module",
   "sideEffects": false,
