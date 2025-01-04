@@ -8,6 +8,9 @@
         "noNonNullAssertion": "off",
         "noParameterAssign": "off"
       },
+      "correctness": {
+        "noUnusedImports": "error"
+      },
       "a11y": {
         "noSvgWithoutTitle": "off"
       }
