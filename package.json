@@ -13,7 +13,8 @@
     "check": "biome check",
     "check:fix": "biome check --write",
     "typecheck": "tsc",
-    "test": "vitest",
+    "test": "vitest run",
+    "test:watch": "vitest --watch",
     "ncu": "bunx npm-check-updates"
   },
   "dependencies": {
