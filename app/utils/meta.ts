@@ -15,10 +15,10 @@ if (import.meta.vitest) {
   const { it, expect } = import.meta.vitest
 
   it('ページタイトルが指定されている場合、正しく返すか', () => {
-    expect(createPageTitle('Input')).toBe('Input | Plantica')
+    expect(createPageTitle('Input')).toBe(`Input | ${APP_NAME}`)
   })
 
   it('ページタイトルが指定されていない場合、正しく返すか', () => {
-    expect(createPageTitle()).toBe('Plantica')
+    expect(createPageTitle()).toBe(APP_NAME)
   })
 }
