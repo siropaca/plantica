@@ -6,10 +6,10 @@
   "type": "module",
   "sideEffects": false,
   "scripts": {
-    "dev": "concurrently \"bun run css --watch\" \"remix vite:dev\"",
+    "dev": "concurrently 'bun run css --watch' 'remix vite:dev'",
     "build": "bun run css && remix vite:build",
     "start": "remix-serve ./build/server/index.js",
-    "css": "unocss app/**/*.tsx --out-file=app/styles/uno.css",
+    "css": "unocss 'app/**/*.tsx' --out-file=app/styles/uno.css",
     "check": "biome check",
     "check:fix": "biome check --write",
     "typecheck": "tsc",
