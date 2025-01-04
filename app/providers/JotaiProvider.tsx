@@ -4,6 +4,6 @@ interface Props {
   children: React.ReactNode
 }
 
-export function JotaiProvider({ children }: Props) {
-  return <Provider>{children}</Provider>
+export function JotaiProvider(props: Props) {
+  return <Provider>{props.children}</Provider>
 }
