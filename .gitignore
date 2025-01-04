@@ -34,7 +34,7 @@ coverage/
 .firebase
 
 # Environment
-/.env
+.env
 
 # Others
 dist/
