@@ -3,9 +3,16 @@ import { Links, Meta, Outlet, Scripts, ScrollRestoration } from '@remix-run/reac
 import reset from '@unocss/reset/tailwind.css?url'
 import unocss from '~/styles/uno.css?url'
 import '~/styles/index.css'
+import { MainLayout } from '~/Layouts'
 import { Providers } from '~/providers'
+import { createPageTitle } from '~/utils'
 
-export const meta: MetaFunction = () => [{ title: 'Plantica' }]
+export const meta: MetaFunction = () => [
+  {
+    title: createPageTitle(), //
+    description: '家計簿アプリ',
+  },
+]
 
 export const links: LinksFunction = () => [
   { rel: 'stylesheet', href: reset },
@@ -24,7 +31,10 @@ export default function App() {
         </head>
 
         <body>
-          <Outlet />
+          <MainLayout>
+            <Outlet />
+          </MainLayout>
+
           <ScrollRestoration />
           <Scripts />
         </body>
