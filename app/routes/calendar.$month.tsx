@@ -1,5 +1,5 @@
 import type { LoaderFunctionArgs, MetaFunction } from '@remix-run/node'
-import { json, useLoaderData } from '@remix-run/react'
+import { useLoaderData } from '@remix-run/react'
 import invariant from 'tiny-invariant'
 import { createPageTitle, formatDate } from '~/utils'
 import { isValidDate } from '~/utils'
