@@ -1,5 +1,8 @@
 import { APP_NAME } from '~/configs'
 
+/**
+ * ページタイトルを生成する
+ */
 export function createPageTitle(pageTitle?: string) {
   return pageTitle ? `${pageTitle} | ${APP_NAME}` : APP_NAME
 }
