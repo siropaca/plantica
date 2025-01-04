@@ -10,7 +10,7 @@
       "~/*": ["./app/*"]
     },
     "resolveJsonModule": true,
-    "types": ["@remix-run/node", "vite/client", "vitest/importMeta"],
+    "types": ["@remix-run/node", "vite/client", "vitest/importMeta", "vitest/globals"],
     "allowJs": true,
     "strict": true,
 
@@ -28,5 +28,5 @@
     "**/.server/**/*.tsx",
     "**/.client/**/*.ts",
     "**/.client/**/*.tsx"
-  ]
+  ],
 }

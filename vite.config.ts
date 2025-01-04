@@ -13,6 +13,10 @@ export default defineConfig({
         v3_lazyRouteDiscovery: true,
       },
     }),
-    tsconfigPaths(),
+    tsconfigPaths()
   ],
+
+  test: {
+    globals: true,
+  },
 })
