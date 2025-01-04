@@ -13,6 +13,7 @@
     "check": "biome check",
     "check:fix": "biome check --write",
     "typecheck": "tsc",
+    "test": "vitest",
     "ncu": "bunx npm-check-updates"
   },
   "dependencies": {
@@ -37,6 +38,7 @@
     "typescript": "5.7.2",
     "unocss": "0.65.3",
     "vite": "5.4.11",
-    "vite-tsconfig-paths": "4.3.2"
+    "vite-tsconfig-paths": "4.3.2",
+    "vitest": "2.1.8"
   }
 }
