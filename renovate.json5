@@ -5,6 +5,7 @@
   "platformAutomerge": false,
   "dependencyDashboard": false,
   "requiredStatusChecks": null,
+  "timezone": "Asia/Tokyo",
   "major": {
     "enabled": false
   },
@@ -25,5 +26,9 @@
     "extends": [
       "schedule:monthly"
     ]
-  }
+  },
+  // 毎日午前4時前に実行
+  "schedule": [
+    "* 0-3 * * *"
+  ]
 }
