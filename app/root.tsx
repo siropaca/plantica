@@ -3,10 +3,7 @@ import { Links, Meta, Outlet, Scripts, ScrollRestoration } from '@remix-run/reac
 import reset from '@unocss/reset/tailwind.css?url'
 import unocss from '~/styles/uno.css?url'
 import '~/styles/index.css'
-import { HydrationBoundary, QueryClient, QueryClientProvider } from '@tanstack/react-query'
-
-import { useState } from 'react'
-import { useDehydratedState } from 'use-dehydrated-state'
+import { Providers } from '~/providers'
 
 export const meta: MetaFunction = () => [{ title: 'Plantica' }]
 
@@ -35,25 +32,9 @@ export function Layout({ children }: { children: React.ReactNode }) {
 }
 
 export default function App() {
-  const [queryClient] = useState(
-    () =>
-      new QueryClient({
-        defaultOptions: {
-          queries: {
-            // クライアントですぐにリフェッチされるのを避けるため、デフォルトの staleTime を 0 以上に設定する。
-            staleTime: 60 * 1000,
-          },
-        },
-      }),
-  )
-
-  const dehydratedState = useDehydratedState()
-
   return (
-    <QueryClientProvider client={queryClient}>
-      <HydrationBoundary state={dehydratedState}>
-        <Outlet />
-      </HydrationBoundary>
-    </QueryClientProvider>
+    <Providers>
+      <Outlet />
+    </Providers>
   )
 }
