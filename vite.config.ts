@@ -17,7 +17,7 @@ export default defineConfig({
   ],
   build: {
     rollupOptions: {
-      external: ['date-fns/locale'],
+      external: ['date-fns', 'date-fns/locale'],
     },
   },
 })
