@@ -26,7 +26,7 @@
   },
   "files": {
     "ignoreUnknown": false,
-    "ignore": ["dist", "generated", "routeTree.gen.ts", "schema.graphql", "uno.css"]
+    "ignore": ["build", "generated", "routeTree.gen.ts", "schema.graphql", "uno.css"]
   },
   "organizeImports": {
     "enabled": true
