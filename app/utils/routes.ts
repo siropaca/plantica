@@ -1,4 +1,4 @@
-import { formatDate } from '~/utils/date'
+import { formatDate } from './date'
 
 export const routes = {
   index: () => '/',

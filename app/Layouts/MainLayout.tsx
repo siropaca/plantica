@@ -1,5 +1,5 @@
 import { Link } from '@remix-run/react'
-import { routes } from '~/utils/routes'
+import { routes } from '~/utils'
 
 interface Props {
   children: React.ReactNode
