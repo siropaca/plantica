@@ -3,9 +3,8 @@ import { Links, Meta, Outlet, Scripts, ScrollRestoration } from '@remix-run/reac
 import reset from '@unocss/reset/tailwind.css?url'
 import unocss from '~/styles/uno.css?url'
 import '~/styles/index.css'
-import { MainLayout } from '~/Layouts'
-import { Providers } from '~/providers'
 import { createPageTitle } from '~/utils'
+import { MainLayout, Providers } from './components'
 
 export const meta: MetaFunction = () => [
   {
