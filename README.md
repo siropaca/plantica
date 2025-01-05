@@ -32,17 +32,17 @@ Plantica では、以下の技術スタックを採用しています。
 
 #### フロントエンド
 
-- フレームワーク: Remix (React)
+- フレームワーク: [Remix (React)](https://remix.run/)
   - モード: SPA モードを使用
-- スタイリング: Tailwind CSS
+- スタイリング: [UnoCss](https://unocss.dev/)
 
 #### 開発ツール
 
 - バージョン管理: mise によるバージョン管理
-- リンター: ESLint
+- リンター: [Biome](https://biomejs.dev/ja/)
 - 依存関係管理: Renovate で自動更新
 - CI/CD: GitHub Actions による継続的インテグレーション
 
 #### ホスティング
 
-- ホスティングサービス: Vercel
+- ホスティングサービス: [Vercel](https://vercel.com/)
