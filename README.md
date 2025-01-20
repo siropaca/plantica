@@ -46,3 +46,7 @@ Plantica では、以下の技術スタックを採用しています。
 #### ホスティング
 
 - ホスティングサービス: [Vercel](https://vercel.com/)
+
+## ステータス
+
+![Alt](https://repobeats.axiom.co/api/embed/2618435e68b43a09b13feee7c1dc7f2d990eec00.svg "Repobeats analytics image")
