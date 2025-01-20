@@ -6,7 +6,8 @@
   "type": "module",
   "sideEffects": false,
   "scripts": {
-    "dev": "concurrently 'bun run css --watch' 'remix vite:dev'",
+    "generate": "supabase gen types typescript --project-id wzhsihiajxehuyrcbjlw --schema public > app/types/database.types.ts",
+    "dev": "bun run generate && concurrently 'bun run css --watch' 'remix vite:dev'",
     "build": "bun run css && remix vite:build",
     "start": "remix-serve ./build/server/index.js",
     "css": "unocss 'app/**/*.tsx' --out-file=app/styles/uno.css",
@@ -21,6 +22,7 @@
     "@remix-run/node": "2.15.2",
     "@remix-run/react": "2.15.2",
     "@remix-run/serve": "2.15.2",
+    "@supabase/supabase-js": "2.47.10",
     "@tanstack/react-query": "5.64.2",
     "@testing-library/dom": "10.4.0",
     "@testing-library/react": "16.2.0",

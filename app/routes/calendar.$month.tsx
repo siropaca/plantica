@@ -1,6 +1,7 @@
 import type { LoaderFunctionArgs, MetaFunction } from '@remix-run/node'
 import { useLoaderData } from '@remix-run/react'
 import invariant from 'tiny-invariant'
+import { supabase } from '~/libs'
 import { createPageTitle, formatDate } from '~/utils'
 import { isValidDate } from '~/utils'
 
@@ -8,7 +9,14 @@ export const meta: MetaFunction = () => {
   return [{ title: createPageTitle('カレンダー') }]
 }
 
-export const loader = ({ params }: LoaderFunctionArgs) => {
+export const loader = async ({ params }: LoaderFunctionArgs) => {
+  const { data, error } = await supabase.from('test').select('*')
+  if (error) {
+    console.error('error', error)
+  } else {
+    console.log('data', data)
+  }
+
   const month = params.month
 
   if (month === undefined) {
