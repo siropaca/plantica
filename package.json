@@ -23,7 +23,7 @@
     "@remix-run/serve": "2.16.4",
     "@tanstack/react-query": "5.71.10",
     "@testing-library/dom": "10.4.0",
-    "@testing-library/react": "16.2.0",
+    "@testing-library/react": "16.3.0",
     "@unocss/reset": "0.65.4",
     "date-fns": "4.1.0",
     "isbot": "5.1.25",
