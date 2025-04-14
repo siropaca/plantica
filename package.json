@@ -21,7 +21,7 @@
     "@remix-run/node": "2.16.5",
     "@remix-run/react": "2.16.5",
     "@remix-run/serve": "2.16.5",
-    "@tanstack/react-query": "5.74.0",
+    "@tanstack/react-query": "5.74.3",
     "@testing-library/dom": "10.4.0",
     "@testing-library/react": "16.3.0",
     "@unocss/reset": "0.65.4",
