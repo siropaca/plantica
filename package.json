@@ -26,7 +26,7 @@
     "@testing-library/react": "16.3.0",
     "@unocss/reset": "0.65.4",
     "date-fns": "4.1.0",
-    "isbot": "5.1.27",
+    "isbot": "5.1.28",
     "jotai": "2.12.4",
     "react": "19.1.0",
     "react-dom": "19.1.0",
